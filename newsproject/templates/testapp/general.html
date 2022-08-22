@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+{% block body_block%}
+{% load static %}
+<br><br>
+<h1 id="font" class="text-center">You are now seeing General News</h1>
+<div class="container-fluid">
+  <div class="d-flex p-5 flex-row">
+    <div class="row">
+        {% for i in articles%}
+            <div class="card rounded shadow-lg m-3" style="width: 20rem;">
+                <img src="{{i.urlToImage}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Author: {{i.author}}</p>
+                  <h5 class="card-title">{{i.title}}</h5>
+                  <p class="card-title">Source: {{i.source.name}}</p>
+                  <p class="card-text">{{i.description}}</p>
+                <hr>
+                <small>published at: {{i.publishedAt}}</small>
+                <a href="{{i.url}}" target="_blank" class="btn btn-primary">See News</a>
+                </div>
+          </div>
+          {%endfor%}
+       </div>
+    </div>
+  </div>
+{% endblock %}

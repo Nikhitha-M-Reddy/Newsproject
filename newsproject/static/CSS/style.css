@@ -1,0 +1,72 @@
+#nav-bar{
+  position: sticky;
+  top:0;
+  z-index: 10;
+}
+.navbar{
+  background-image: linear-gradient(to right,#fa0202,#cc0000);
+  /* padding:0!important; */
+  font-family: 'Rubik Distressed';
+  font-size: 20px;
+  font-weight:normal;
+
+}
+.navbar-nav li{
+  padding: 10 10px;
+}
+.navbar-nav li a{
+  color:#fff!important;
+  font-weight:600;
+}
+#banner{
+  background-image: linear-gradient(to right,#fa0202,#cc0000);
+  padding-top: 10%;
+  color: #fff;
+  font-family: "Permanent Marker";
+  font-size: 30px;
+  margin: "rounded";
+}
+
+#services{
+  padding: 80px 0;
+}
+.services-img{
+  width: auto;
+  margin-top: 20px;
+}
+.services{
+  padding:20px;
+}
+
+#social-media{
+  background: #f8f9fa;
+  padding:10px 0;
+}
+#social-media p{
+  font-size: 36px;
+  font-weight: 60;
+  margin-bottom: 30px;
+}
+.social-icons img{
+  width:10%;
+  height:10%;
+  transition: 0.5s;
+}
+.social-icons a:hover img{
+  transform: translateY(-10px);
+}
+#font{
+  font-family: 'Aboreto', cursive;
+}
+.se{
+  font-size: 15px;
+}
+.card{
+  margin: 10px;
+  border-style: solid;
+  border-radius: 5px;
+}
+.card-header{
+  background-color: #242323;
+  color: white;
+}

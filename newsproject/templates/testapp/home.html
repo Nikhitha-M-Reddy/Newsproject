@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+{% load static %}
+{% block body_block%}
+<section id="banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+          <h1>Welcome to News</h1>
+          <br>
+          <p>"The pen is mightier than the sword" <small>-Edward Bulwer-Lytton</small></p>
+
+      </div>
+   </div>
+</div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-4 services">
+        <img src="{%static "images/sp.jpg"%}" class="services-img" alt="">
+        <p><a href="/signup"></a>Signup for more updates</p>
+      </div>
+      <div class="col-md-4 services">
+        <img src="{%static "images/sm.jfif"%}" class="services-img" alt="">
+        <p>Dont worry. <br>Please login. <br>we will not store your details</p>
+      </div>
+      <div class="col-md-4 services">
+        <img src="{%static "images/sm.jpg"%}" class="services-img" alt="">
+        <p>Follow our social media pages</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="social-media">
+  <div class="container text-center">
+    <p>Find us on Social Media</p>
+    <div class="social-icons">
+      <div class="row">
+        <div class="col-2">
+              <a href="https://twitter.com/login" target="_blank"><img src="{%static "images/twitter-icon.png"%}" alt="Twitter"></a>
+          </div>
+          <div class="col-2">
+              <a href="https://www.facebook.com/login/" target="_blank"><img src="{%static "images/facebook-icon.png"%}" alt="Facebook"></a>
+          </div>
+          <div class="col-2">
+              <a href="https://web.whatsapp.com/" target="_blank"><img src="{%static "images/whatsapp-icon.png"%}" alt="WhatsApp"></a>
+          </div>
+          <div class="col-2">
+                <a href="https://ca.linkedin.com/" target="_blank"><img src="{%static "images/linkedin-icon.png"%}" alt="Linkedin"></a>
+          </div>
+          <div class="col-2">
+                <a href="https://www.instagram.com/" target="_blank"><img src="{%static "images/instagram-icon.png"%}" alt="Instagram"></a>
+          </div>
+          <div class="col-2">
+                <a href="https://accounts.snapchat.com/accounts/login?client_id=geo" target="_blank"><img src="{%static "images/snapchat-icon.png"%}" alt="Snapchat"></a>
+          </div>
+
+
+
+
+  </div
+    </div>
+
+  </div>
+</section>
+
+{% endblock %}

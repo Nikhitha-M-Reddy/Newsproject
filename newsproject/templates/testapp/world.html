@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+{% block body_block%}
+{% load static %}
+
+<!-- <h2> Search Channel</h2>
+<form class="" action="world.html" method="get">
+  <input type="text" name="" value="">
+  <button type="Submit" name="search">Search</button>
+</form> -->
+<div class="container">
+  <div class="d-flex p-5">
+    <div class="row">
+        {% for i in sources%}
+                <div class="card rounded shadow-lg m-3">
+                  <h5 class="card-header">{{i.name}}</h5>
+                  <div class="card-body">
+                    <h5 class="card-title">{{i.description}}</h5>
+                    <p class="card-text">News Channel Type: {{i.category}}</p>
+                    <p class="card-text">News Channel Language: {{i.language}}</p>
+                    <p class="card-text">News Channel Origin: {{i.country}}</p>
+                      <a href="{{i.url}}" target="_blank" class="btn btn-primary">Go See News</a>
+                  </div>
+                </div>
+        {%endfor%}
+       </div>
+    </div>
+  </div>
+{% endblock %}
